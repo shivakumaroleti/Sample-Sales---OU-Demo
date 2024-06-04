@@ -1,0 +1,23 @@
+{
+  "physicalTable": {
+    "name": "D50 Sales Rep",
+    "sourceTable": "physicalTable:MySampleSalesDatabase.BISAMPLE.SAMP_EMPL_D_VH",
+    "caching": {
+      "enable": true
+    },
+    "joins": [      {
+        "rightTable": "physicalTable:MySampleSalesDatabase.BISAMPLE.D52 Sales Rep Position",
+        "joinConditions": [          {
+            "leftColumn": "physicalColumn:MySampleSalesDatabase.BISAMPLE.D50 Sales Rep.POSTN_KEY",
+            "rightColumn": "physicalColumn:MySampleSalesDatabase.BISAMPLE.D52 Sales Rep Position.POSTN_KEY"
+          }
+        ]
+      }
+    ],
+    "additionalKeys": [
+      [
+        "EMPLOYEE_KEY"
+      ]
+    ]
+  }
+}

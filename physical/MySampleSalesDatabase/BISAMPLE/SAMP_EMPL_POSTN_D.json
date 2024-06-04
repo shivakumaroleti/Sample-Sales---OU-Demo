@@ -1,0 +1,26 @@
+{
+  "physicalTable" : {
+    "name" : "SAMP_EMPL_POSTN_D",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "POSTN_KEY",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : true
+    }, {
+      "name" : "POSTN_DESC",
+      "dataType" : "VARCHAR",
+      "length" : 64,
+      "nullable" : true
+    }, {
+      "name" : "POSTN_LEVEL",
+      "dataType" : "VARCHAR",
+      "length" : 64,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "physicalTable": {
+    "name": "F2 Revenue Aggregate",
+    "sourceTable": "physicalTable:MySampleSalesDatabase.BISAMPLE.SAMP_REVENUE_FA2",
+    "caching": {
+      "enable": true
+    },
+    "joins": [      {
+        "rightTable": "physicalTable:MySampleSalesDatabase.BISAMPLE.D1 Time QTR Grain",
+        "joinConditions": [          {
+            "leftColumn": "physicalColumn:MySampleSalesDatabase.BISAMPLE.F2 Revenue Aggregate.BILL_QTR_KEY",
+            "rightColumn": "physicalColumn:MySampleSalesDatabase.BISAMPLE.D1 Time QTR Grain.QTR_KEY"
+          }
+        ]
+      },
+      {
+        "rightTable": "physicalTable:MySampleSalesDatabase.BISAMPLE.D2 Products",
+        "joinConditions": [          {
+            "leftColumn": "physicalColumn:MySampleSalesDatabase.BISAMPLE.F2 Revenue Aggregate.PROD_KEY",
+            "rightColumn": "physicalColumn:MySampleSalesDatabase.BISAMPLE.D2 Products.PROD_KEY"
+          }
+        ]
+      }
+    ]
+  }
+}

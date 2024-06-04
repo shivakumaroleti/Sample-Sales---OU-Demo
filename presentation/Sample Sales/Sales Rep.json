@@ -1,0 +1,38 @@
+{
+  "presentationTable" : {
+    "name" : "Sales Rep",
+    "presentationColumns" : [ {
+      "name" : "Sales Rep Name",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.D5 Sales Rep.Sales Rep Name"
+    }, {
+      "name" : "Sales Rep Number",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.D5 Sales Rep.Sales Rep Number"
+    }, {
+      "name" : "Hire Date",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.D5 Sales Rep.Hire Date"
+    }, {
+      "name" : "Manager Number",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.D5 Sales Rep.Manager Number"
+    }, {
+      "name" : "Position Key",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.D5 Sales Rep.Position Key"
+    }, {
+      "name" : "Sales Rep Type",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.D5 Sales Rep.Sales Rep Type"
+    }, {
+      "name" : "Position",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.D5 Sales Rep.Position"
+    }, {
+      "name" : "Position Level",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.D5 Sales Rep.Position Level"
+    }, {
+      "name" : "Closure Distance",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.D5 Sales Rep.Closure Distance"
+    } ],
+    "hierarchies" : [ {
+      "name" : "D5 Sales Rep",
+      "sourceLogicalTable" : "logicalTable:Sample Sales BM.D5 Sales Rep",
+      "displayColumn" : "presentationColumn:Sample Sales.Sales Rep.Sales Rep Name"
+    } ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "physicalTable" : {
+    "name" : "SAMP_REVENUE_FA2",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "PROD_KEY",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : true
+    }, {
+      "name" : "BILL_QTR_KEY",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : true
+    }, {
+      "name" : "REVENUE",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : true
+    }, {
+      "name" : "UNITS",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

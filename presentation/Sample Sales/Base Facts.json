@@ -1,0 +1,27 @@
+{
+  "presentationTable" : {
+    "name" : "Base Facts",
+    "presentationColumns" : [ {
+      "name" : "Units",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.F1 Revenue.Units"
+    }, {
+      "name" : "Revenue",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.F1 Revenue.Revenue"
+    }, {
+      "name" : "Actual Unit Price",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.F1 Revenue.Actual Unit Price"
+    }, {
+      "name" : "Product Share",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.F1 Revenue.Product Share"
+    }, {
+      "name" : "Product Total Revenue",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.F1 Revenue.Product Total Revenue"
+    }, {
+      "name" : "Product Type Revenue",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.F1 Revenue.Product Type Revenue"
+    }, {
+      "name" : "Revenue Rank",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.F1 Revenue.Revenue Rank"
+    } ]
+  }
+}

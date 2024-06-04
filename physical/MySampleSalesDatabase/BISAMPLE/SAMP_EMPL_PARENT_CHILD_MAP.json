@@ -1,0 +1,31 @@
+{
+  "physicalTable" : {
+    "name" : "SAMP_EMPL_PARENT_CHILD_MAP",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "MEMBER_KEY",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : true
+    }, {
+      "name" : "ANCESTOR_KEY",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : true
+    }, {
+      "name" : "DISTANCE",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : true
+    }, {
+      "name" : "IS_LEAF",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

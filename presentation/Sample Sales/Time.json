@@ -1,0 +1,56 @@
+{
+  "presentationTable" : {
+    "name" : "Time",
+    "presentationColumns" : [ {
+      "name" : "Calendar Date",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.D1 Time.Calendar Date"
+    }, {
+      "name" : "Per Name Half",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.D1 Time.Per Name Half"
+    }, {
+      "name" : "Per Name Month",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.D1 Time.Per Name Month"
+    }, {
+      "name" : "Per Name Qtr",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.D1 Time.Per Name Qtr"
+    }, {
+      "name" : "Per Name Week",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.D1 Time.Per Name Week"
+    }, {
+      "name" : "Per Name Year",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.D1 Time.Per Name Year"
+    } ],
+    "hierarchies" : [ {
+      "name" : "H1",
+      "sourceLogicalTable" : "logicalTable:Sample Sales BM.D1 Time",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:Sample Sales BM.D1 Time.Total"
+      }, {
+        "name" : "Year",
+        "sourceLogicalLevel" : "logicalLevel:Sample Sales BM.D1 Time.Year",
+        "displayColumn" : "presentationColumn:Sample Sales.Time.Per Name Year"
+      }, {
+        "name" : "Half Year",
+        "sourceLogicalLevel" : "logicalLevel:Sample Sales BM.D1 Time.Half Year",
+        "displayColumn" : "presentationColumn:Sample Sales.Time.Per Name Half"
+      }, {
+        "name" : "Qtr",
+        "sourceLogicalLevel" : "logicalLevel:Sample Sales BM.D1 Time.Qtr",
+        "displayColumn" : "presentationColumn:Sample Sales.Time.Per Name Qtr"
+      }, {
+        "name" : "Month",
+        "sourceLogicalLevel" : "logicalLevel:Sample Sales BM.D1 Time.Month",
+        "displayColumn" : "presentationColumn:Sample Sales.Time.Per Name Month"
+      }, {
+        "name" : "Week",
+        "sourceLogicalLevel" : "logicalLevel:Sample Sales BM.D1 Time.Week",
+        "displayColumn" : "presentationColumn:Sample Sales.Time.Per Name Week"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:Sample Sales BM.D1 Time.Detail",
+        "displayColumn" : "presentationColumn:Sample Sales.Time.Calendar Date"
+      } ]
+    } ]
+  }
+}

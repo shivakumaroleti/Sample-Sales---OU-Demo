@@ -1,0 +1,48 @@
+{
+  "presentationTable" : {
+    "name" : "Customers",
+    "presentationColumns" : [ {
+      "name" : "Cust Key",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.D3 Customers.Cust Key"
+    }, {
+      "name" : "Name",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.D3 Customers.Name"
+    } ],
+    "hierarchies" : [ {
+      "name" : "H1",
+      "sourceLogicalTable" : "logicalTable:Sample Sales BM.D3 Customers",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:Sample Sales BM.D3 Customers.Total"
+      }, {
+        "name" : "Customer Region",
+        "sourceLogicalLevel" : "logicalLevel:Sample Sales BM.D3 Customers.Customer Region",
+        "displayColumn" : "presentationColumn:Sample Sales.Customer Regions.Region"
+      }, {
+        "name" : "Customer Area",
+        "sourceLogicalLevel" : "logicalLevel:Sample Sales BM.D3 Customers.Customer Area",
+        "displayColumn" : "presentationColumn:Sample Sales.Customer Regions.Area"
+      }, {
+        "name" : "Customer Country",
+        "sourceLogicalLevel" : "logicalLevel:Sample Sales BM.D3 Customers.Customer Country",
+        "displayColumn" : "presentationColumn:Sample Sales.Customer Regions.Country Name"
+      }, {
+        "name" : "Customer State Province",
+        "sourceLogicalLevel" : "logicalLevel:Sample Sales BM.D3 Customers.Customer State Province",
+        "displayColumn" : "presentationColumn:Sample Sales.Customer Regions.State Province"
+      }, {
+        "name" : "Customer City",
+        "sourceLogicalLevel" : "logicalLevel:Sample Sales BM.D3 Customers.Customer City",
+        "displayColumn" : "presentationColumn:Sample Sales.Customer Regions.City"
+      }, {
+        "name" : "Customer Postal Code",
+        "sourceLogicalLevel" : "logicalLevel:Sample Sales BM.D3 Customers.Customer Postal Code",
+        "displayColumn" : "presentationColumn:Sample Sales.Customer Regions.Postal Code"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:Sample Sales BM.D3 Customers.Detail",
+        "displayColumn" : "presentationColumn:Sample Sales.Customers.Cust Key"
+      } ]
+    } ]
+  }
+}

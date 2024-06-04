@@ -1,0 +1,48 @@
+{
+  "presentationTable" : {
+    "name" : "Product (Ragged)",
+    "presentationColumns" : [ {
+      "name" : "Prod Key",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.D20 Product.Prod Key"
+    }, {
+      "name" : "Prod Dsc",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.D20 Product.Prod Dsc"
+    }, {
+      "name" : "Type",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.D20 Product.Type"
+    }, {
+      "name" : "Lob",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.D20 Product.Lob"
+    }, {
+      "name" : "Brand",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.D20 Product.Brand"
+    }, {
+      "name" : "Total Value",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.D20 Product.Total Value"
+    } ],
+    "hierarchies" : [ {
+      "name" : "H1",
+      "sourceLogicalTable" : "logicalTable:Sample Sales BM.D20 Product",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:Sample Sales BM.D20 Product.Total"
+      }, {
+        "name" : "Product Brand",
+        "sourceLogicalLevel" : "logicalLevel:Sample Sales BM.D20 Product.Product Brand",
+        "displayColumn" : "presentationColumn:Sample Sales.Product (Ragged).Brand"
+      }, {
+        "name" : "Product LOB",
+        "sourceLogicalLevel" : "logicalLevel:Sample Sales BM.D20 Product.Product LOB",
+        "displayColumn" : "presentationColumn:Sample Sales.Product (Ragged).Lob"
+      }, {
+        "name" : "Product Type",
+        "sourceLogicalLevel" : "logicalLevel:Sample Sales BM.D20 Product.Product Type",
+        "displayColumn" : "presentationColumn:Sample Sales.Product (Ragged).Type"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:Sample Sales BM.D20 Product.Detail",
+        "displayColumn" : "presentationColumn:Sample Sales.Products.Product"
+      } ]
+    } ]
+  }
+}

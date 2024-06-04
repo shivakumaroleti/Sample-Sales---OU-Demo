@@ -1,0 +1,23 @@
+{
+  "physicalTable": {
+    "name": "D51 Sales Rep Parent Child",
+    "sourceTable": "physicalTable:MySampleSalesDatabase.BISAMPLE.SAMP_EMPL_PARENT_CHILD_MAP",
+    "caching": {
+      "enable": true
+    },
+    "joins": [      {
+        "rightTable": "physicalTable:MySampleSalesDatabase.BISAMPLE.D50 Sales Rep",
+        "joinConditions": [          {
+            "leftColumn": "physicalColumn:MySampleSalesDatabase.BISAMPLE.D51 Sales Rep Parent Child.ANCESTOR_KEY",
+            "rightColumn": "physicalColumn:MySampleSalesDatabase.BISAMPLE.D50 Sales Rep.EMPLOYEE_KEY"
+          }
+        ]
+      }
+    ],
+    "additionalKeys": [
+      [
+        "MEMBER_KEY"
+      ]
+    ]
+  }
+}
